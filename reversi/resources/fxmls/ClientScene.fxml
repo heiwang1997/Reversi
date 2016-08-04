@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reversi.ui.SceneClientController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <Label text="Choose a Game to Join" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="30.0" top="50.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Rockwell" size="29.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <JFXListView fx:id="serverListView" opacity="0.8" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="120.0" right="120.0" />
+               </BorderPane.margin>
+            </JFXListView>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="900.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="joinButton" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" onAction="#joinButtonClicked" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: #FFFFFF;" text="Join!">
+                     <font>
+                        <Font name="Rockwell" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="IPButton" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" onAction="#IPButtonClicked" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: #FFFFFF;" text="IP Connection">
+                     <font>
+                        <Font name="Rockwell" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="refreshButton" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" onAction="#refreshButtonClicked" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: #FFFFFF;" text="Refresh">
+                     <font>
+                        <Font name="Rockwell" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="cancelButton" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" onAction="#cancelButtonClicked" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: #FFFFFF;" text="Cancel">
+                     <font>
+                        <Font name="Rockwell" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="35.0" top="30.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+      <AnchorPane fx:id="IPPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="390.0">
+         <children>
+            <JFXTextField fx:id="IPTextField" focusColor="#40a890" layoutX="14.0" layoutY="14.0" maxWidth="355.0" minWidth="88.0" prefColumnCount="3" prefHeight="66.0" prefWidth="390.0" promptText="IPv4 address recommended" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

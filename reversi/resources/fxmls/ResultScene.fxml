@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reversi.ui.SceneResultController">
+   <children>
+      <Pane fx:id="circleCanvas" prefHeight="200.0" prefWidth="200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <Label fx:id="winnerLabel" text="The Winner is:" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Rockwell" size="46.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="50.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <Circle fx:id="chessCircle" fill="WHITE" radius="68.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <JFXButton fx:id="backButton" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="10.0" onAction="#backButtonClicked" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #FFFFFF;" text="Back" translateZ="20.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="80.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Rockwell" size="18.0" />
+               </font>
+            </JFXButton>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>

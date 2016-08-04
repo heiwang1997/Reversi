@@ -1,0 +1,96 @@
+.root{
+    -fx-font-family: rockwell;
+    /*src:"/resources/roboto/Roboto-Regular.ttf";*/
+}
+
+.reversi-cell {
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+.reversi-cell-even {
+    -fx-background-color: #D3D3D3;
+}
+
+.reversi-cell-odd {
+    -fx-background-color: #DDDDDD;
+}
+
+.reversi-cell-blinker {
+    -fx-background-radius: 5px;
+    -fx-background-color: #FFFFFF;
+}
+
+.reversi-cell-disabler {
+    -fx-background-radius: 5px;
+    -fx-background-color: black;
+}
+
+.reversi-chess-black {
+    -fx-fill: black;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+.reversi-chess-white {
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 0);
+}
+
+.head-hint {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+}
+
+.head-hint .label {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-text-alignment: center;
+}
+
+.select-game-mode {
+    -fx-padding: 14px;
+    -fx-vgap: 14px;
+    -fx-font-size: 18px;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * JFX Dialog Layout                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+.jfx-dialog-overlay-pane {
+    -fx-background-color: rgba(0.0,0.0,0.0,0.1);
+}
+
+.dialog-trigger{
+    -fx-background-color: WHITE;
+    -fx-button-type:RAISED;
+    -fx-font-size: 14.0px;
+}
+
+.jfx-dialog-layout {
+    -fx-padding: 24.0px 24.0px 16.0px 24.0px;
+    -fx-text-fill: rgba(0.0, 0.0, 0.0, 0.87);
+}
+.jfx-layout-heading {
+    -fx-font-size: 20.0px;
+    -fx-font-weight: BOLD;
+    -fx-alignment: center-left;
+    -fx-padding: 5.0 0.0 5.0 0.0;
+}
+
+.jfx-layout-body .label {
+    -fx-font-size: 14.0px;
+    -fx-pref-width: 400.0px;
+    -fx-wrap-text: true;
+}
+
+.jfx-layout-actions {
+    -fx-padding: 10.0px 0.0 0.0 0.0 ;
+    -fx-alignment: center-right ;
+}
+.dialog-accept{
+    -fx-text-fill: #03A9F4;
+    -fx-font-weight: BOLD;
+    -fx-padding: 0.7em 0.8em;
+}

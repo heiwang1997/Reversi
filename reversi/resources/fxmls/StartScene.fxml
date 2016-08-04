@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reversi.ui.SceneStartController">
+   <children>
+      <AnchorPane fx:id="gameDetailPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="387.0">
+         <children>
+            <Label fx:id="blackLabel" layoutX="87.0" layoutY="122.0" text="BLACK">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="whiteLabel" layoutX="260.0" layoutY="122.0" text="WHITE">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="thinkTimeLabel" layoutX="22.0" layoutY="14.0" text="Think Time (20s):">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="colorToggleButton" layoutX="165.0" layoutY="103.0" text=" " unToggleColor="#444ac3" unToggleLineColor="#8bacff">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXSlider fx:id="thinkTimeSlider" blockIncrement="5.0" layoutX="38.0" layoutY="52.0" min="5.0" prefHeight="27.0" prefWidth="319.0" showTickMarks="true" value="20.0" />
+            <Label layoutX="24.0" layoutY="89.0" text="Your Color:">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="161.0" lineSpacing="2.0" prefHeight="109.0" prefWidth="304.0" text="    Being a game server, you can host your game within a private local network. However, you must possess an independent global IP address (which means NAT devices are not allowed) if you want to share games globally, otherwise you will not be discovered by other hosts." textFill="#808080" wrapText="true">
+               <font>
+                  <Font name="Rockwell" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AIPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0" prefWidth="386.0">
+         <children>
+            <Label layoutX="24.0" layoutY="30.0" text="Use AI: ">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="81.0" text="AI Color:">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="AIBlackRadioButton" layoutX="124.0" layoutY="81.0" text="Black">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="AIWhiteRadioButton" layoutX="251.0" layoutY="81.0" text="White">
+               <font>
+                  <Font name="Rockwell" size="20.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXToggleButton fx:id="AIToggleButton" layoutX="124.0" layoutY="14.0" text=" " />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

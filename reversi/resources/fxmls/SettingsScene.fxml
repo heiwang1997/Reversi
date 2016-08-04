@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reversi.ui.SceneSettingsController">
+   <children>
+      <AnchorPane fx:id="settingsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="357.0">
+         <children>
+            <Label layoutX="20.0" layoutY="132.0" text="AI Level:">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="thinkTimeLabel" layoutX="20.0" layoutY="25.0" text="Think Time (20s):">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="79.0" text="Background Music:">
+               <font>
+                  <Font name="Rockwell" size="17.0" />
+               </font>
+            </Label>
+            <JFXToggleButton fx:id="BGMToggleButton" layoutX="195.0" layoutY="60.0" text=" ">
+               <font>
+                  <Font name="Rockwell" size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXSlider fx:id="thinkTimeSlider" blockIncrement="5.0" layoutX="195.0" layoutY="28.0" min="5.0" minorTickCount="5" prefHeight="27.0" prefWidth="136.0" showTickMarks="true" snapToTicks="true" value="20.0" />
+            <JFXSlider fx:id="AILevelSlider" blockIncrement="5.0" layoutX="195.0" layoutY="128.0" majorTickUnit="1.0" max="6.0" min="3.0" minorTickCount="0" prefHeight="27.0" prefWidth="136.0" showTickMarks="true" snapToTicks="true" value="4.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
