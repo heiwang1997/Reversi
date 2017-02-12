@@ -8,7 +8,13 @@ The object of the game is to have the majority of disks turned to display your c
 
 The game features in AI support (alpha-beta algorithm is implemeted with a naive judge function), network support and cool animation effects. Some previews of the game is shown below.
 
-
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/1.png)
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/2.png)
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/3.png)
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/4.png)
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/5.png)
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/6.png)
+![image](https://github.com/heiwang1997/Reversi/raw/master/images/7.png)
 
 ## Executing the game
 
